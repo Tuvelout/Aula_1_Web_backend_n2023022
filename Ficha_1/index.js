@@ -27,8 +27,11 @@ function nova_funcao(nome_mes){
     switch (nova_funcao) {
         case 1:
             console.log("Janeiro");
-            
+            break;
+        default:
+            console.log("Mês Inválido");
+            break;
     }
 }
 
-nova_funcao(3)
+nova_funcao(1)
