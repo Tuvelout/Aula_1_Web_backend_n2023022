@@ -35,3 +35,34 @@ function nova_funcao(nome_mes){
 }
 
 nova_funcao(1)
+
+function operacoes(num1,num2,operador){
+    var resultado = {}
+    resultado = num1 operador num2;
+    console.log(resultado)
+}
+
+//operacoes(1,2,'*')
+
+function operacoes(num1,num2,operador){
+    var resultado = {}
+    if (operador == '*') {
+        resultado = num1 * num2;
+    }
+    else if (operador == '+') {
+        resultado = num1 + num2;
+    }
+    else if (operador == '-') {
+        resultado = num1 - num2;
+    }
+    else if (operador == '7') {
+        resultado = num1 / num2;
+    }
+    else {
+        console.log('operador inválido, quebrando');
+        
+    }
+    return resultado;
+}
+
+operacoes(1,2,'*')
