@@ -119,13 +119,12 @@ function triangulo(altura){
 
 //ex8
 
-function caixa(width,altura){
+function caixa(size){
     console.log("Desenha retangulo");
-    console.log("Largura:" + width);
-    console.log("Altura:" + altura);
+ 
     var box = "";
-    for(let i = 0; i < width; i++){
-        for(let j = 0; j < altura; j++){
+    for(let i = 0; i < size; i++){
+        for(let j = 0; j < size; j++){
             if(i == 0 || i == size -1 || j == 0 || j == size -1){
                 box+='*';
             }
@@ -137,7 +136,7 @@ function caixa(width,altura){
 
 caixa(3,5)
 
-//ex9
+//ex9 a
 
 var student1 = {name: 'Pedro', grade: 20}
 var student2= {name: 'Tio', grade: 3}
@@ -149,5 +148,67 @@ student_lista.push(student2);
 student_lista.push(student3);
 
 var grade = student_lista[1].grade //liga-se ao objeto
+
+//c não b máximo
+function maximo(array){
+    var m = array[0];
+    var bestStudent = array[0];
+    for (let i = 0; i < array.length ; i++){
+        for (let i = 0; i < array.length; i++) {
+            if(array[i].grade > m)
+            m = array[i].grade;
+            bestStudent = array[i]
+        }
+        return bestStudent;
+    }
+}
+
+console.log(maximo(student_lista)) //mostar o máximo
+
+// d minimo
+
+function minimo(array){
+    var m = array[0];
+    var bestStudent = array[0];
+    for (let i = 0; i < array.length ; i++){
+        for (let i = 0; i < array.length; i++) {
+            if(array[i].grade < m)
+            m = array[i].grade;
+            bestStudent = array[i]
+        }
+        return bestStudent;
+    }
+}
+
+//console.log(minimo(student_lista)) //mostar o máximo
+
+//e média
+
+//sei lá
+
+function closestToAverage(studentList){
+    var avg = averageGrade(studentList);
+    for (let i = 0; i < studentList.length; i++){
+        let diff = Math.abs(avg - studentList[i].grade);
+        if(diff < min){
+            min = diff;
+            student = studentList[i];
+        }
+    }
+    return student;
+}
+
+console.log(closestToAverage())
+
+//f negativa~
+
+function Listanegativa(array){
+    var cout = 0;
+    for (var i = 0; i < array.length; i ++){
+        if (array[i].grade < 9.5){
+            cont++ ;
+        }
+    }
+}
 
 
