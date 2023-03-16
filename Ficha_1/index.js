@@ -102,7 +102,7 @@ function fatorial(num) {
     return fact;
 }
 
-console.log(fatorial(2))
+//console.log(fatorial(2))
 
 // ex11.minimo
 
@@ -119,7 +119,7 @@ function minimo(array){
 
 var lista = [2,3,7,0,1]
 var min = minimo(lista)
-console.log(min) //mostar o minimo
+//console.log(min) //mostar o minimo
 
 //ex11.máximo
 
@@ -141,15 +141,8 @@ console.log(max) //mostar o máximo
 //ex11.média procura como o i funciona para obter o valor da lista
 
 function media(array){
-    var l = array.length;
-    var soma = 0
-    for (var i = 1; i < l ; i++){
-        if (i > max){
-            max = array[i]
-        }
-    }
-    return max
+    return "Falta código"
 }
 
 var lista = [2,3,7,0,1]
-console.log(media) //mostar o máximo
+//console.log(media) //mostar o máximo
