@@ -23,4 +23,4 @@ var index2 = 2
 //console.log(arrayUtils.indexOf(array,value))
 //console.log(arrayUtils.subArray(array,startindex,endindex))
 //console.log(arrayUtils.isSameLength(array,array1))
-console.log(arrayUtils.swap(array,index1,index2))
+console.log(arrayUtils.swap(array,index1,index2)) //para que serve o method swap 
